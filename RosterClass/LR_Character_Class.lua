@@ -9,7 +9,7 @@ Requires:
 API:
 MyCharacter: = LR_Character_Class:New();
 MyCharacter:SetFromGuildRoster(5);
-MyCharacter:SetIndex(1);
+MyCharacter:SetIndex(1); -- Tracking variable for the roster containing this character.
 Index = MyCharacter:GetIndex();
 RankString = MyCharacter:GetRank();
 RankIndex = MyCharacter:GetRankIndex();
