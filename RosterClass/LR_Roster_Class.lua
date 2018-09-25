@@ -27,6 +27,7 @@ function LR_Roster_Class:New()
 	  __Options = {}
    };
    LR_OOP.InheritClass(Roster,LR_Roster_Class);
+   print("Inheriting roster class");
    return Roster;
 end
 function LR_Roster_Class:GetCharacterByName(LongName)

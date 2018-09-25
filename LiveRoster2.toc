@@ -1,4 +1,4 @@
-## Interface: 70000
+## Interface: 80000
 ## Title: Live Roster 2
 ## Notes: Guild Roster Upgrades
 ## Author: Sinderion@Shadow Council
@@ -8,12 +8,13 @@
 ## LoadWith: Blizzard_Communities
 
 Const/Constants.lua
-Utils/Utils.lua
+Util/Util.lua
 OOP/OOP.lua
 RosterClass/LR_Character_Class.lua
 RosterClass/LR_Roster_Class.lua
 LiveClass/LR_LiveRoster_Class.lua
 LiveClass/LR_LiveCharacter_Class.lua
 CommandLine/CommandLine.lua
+Embeds.xml
 Core.lua
 

@@ -18,7 +18,7 @@ MyLiveRoster:UpdateLiveRoster();
 
 LR_LiveRoster_Class = {};
 function LR_LiveRoster_Class:New()
-   local LiveRoster = {
+   local GuildRoster = {
 	Roster = LR_Roster_Class:New(),
 	__Mains = {},
 	__ShortNames = {},
@@ -27,7 +27,7 @@ function LR_LiveRoster_Class:New()
 	__RosterErrors = {}
    }
    LR_OOP.InheritClass(LiveRoster,LR_LiveRoster_Class);
-   return LiveRoster;
+   return GuildRoster;
 end
 function LR_LiveRoster_Class:__ActivateCharacters()
    for Key, Character in pairs(self.Roster) do
@@ -43,7 +43,7 @@ function LR_LiveRoster_Class:__SortMainsAndAlts()
       elseif Character:GetMainShortName() then
          table.insert(self.__Alts,Character);
       else
-         table.insert(self.__RosterErrors,{Character, LR_ERROR_INVALIDCOMMENT);
+         table.insert(self.__RosterErrors,{Character, LR_ERROR_INVALIDCOMMENT});
       end
    end
 end
@@ -54,7 +54,7 @@ function LR_LiveRoster_Class:__ConnectAlts()
 		AltCharacter:SetMain(Main);
 		Main:AddAlt(AltCharacter)
       else
-		tinsert(__RosterErrors, {Main, LR_ERROR_MAINNOTFOUND)
+		tinsert(__RosterErrors, {Main, LR_ERROR_MAINNOTFOUND})
 	  end
    end
 end
