@@ -3,7 +3,7 @@
 ## Notes: Guild Roster Upgrades
 ## Author: Sinderion@Shadow Council
 ## Version: 2.0
-## SavedVariables: LR2SETTINGS, LR2SNAPSHOT
+## SavedVariables: LiveRoster2DB
 ## LoadOnDemand: 1
 ## LoadWith: Blizzard_Communities
 
