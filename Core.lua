@@ -3,7 +3,7 @@ LiveRoster = LibStub("AceAddon-3.0"):NewAddon("LiveRoster");
 LiveRoster.Guild = LR_LiveRoster_Class:New();
 LiveRoster.Guild.Roster:UpdateRoster();
 local TestToon = "Sinderion-ShadowCouncil";
-local Character = LiveRoster.Roster:GetCharacterByName(TestToon);
+local Character = LiveRoster.Guild.Roster:GetCharacterByName(TestToon);
 print(Character:GetRank());
 
 function LiveRoster:OnInitialize()
